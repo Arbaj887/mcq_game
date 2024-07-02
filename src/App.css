@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    background-color: rgb(42, 134, 255);
+    color: white;
+    text-align: center;
+    margin: 0px;
+    font-size: 30px;
+    padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.correct-answer {
+    margin: 0px 10px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    background-color: rgb(3, 207, 3);
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.incorrect-answer {
+    margin: 0px 10px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    background-color: rgb(255, 23, 23);
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Question and Answer styles */
+.question, .answer {
+    max-width: 800px;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 40px auto;
+    font-size: 30px;
+    padding-left: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.question {
+    height: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.question h3, .answer h3 {
+    margin: 15px;
+}
+
+.question input[type="radio"], .answer input[type="radio"] {
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.question label, .answer label {
+    margin-right: 20px;
+}
+
+.question button, .answer button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.question button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.question button:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .question, .answer {
+        max-width: 100%;
+        margin: 20px auto;
+        font-size: 20px;
+        padding: 20px;
+        height: auto;
+    }
+
+    .navbar {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    .question h3, .answer h3 {
+        font-size: 24px;
+    }
+
+    .question input[type="radio"], .answer input[type="radio"] {
+        margin: 8px;
+        height: 18px;
+        width: 18px;
+    }
+
+    .question label, .answer label {
+        margin-right: 10px;
+    }
+
+    .question button, .answer button {
+        padding: 8px 16px;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 480px) {
+    .question, .answer {
+        max-width: 100%;
+        margin: 10px auto;
+        font-size: 18px;
+        padding: 10px;
+        height: auto;
+    }
+
+    .navbar {
+        font-size: 20px;
+        padding: 6px;
+    }
+
+    .question h3, .answer h3 {
+        font-size: 20px;
+    }
+
+    .question input[type="radio"], .answer input[type="radio"] {
+        margin: 6px;
+        height: 16px;
+        width: 16px;
+    }
+
+    .question label, .answer label {
+        margin-right: 5px;
+    }
+
+    .question button, .answer button {
+        padding: 6px 12px;
+        font-size: small;
+    }
 }

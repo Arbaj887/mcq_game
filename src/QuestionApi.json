@@ -1,0 +1,92 @@
+[
+    {
+       "question": "What is React primarily used for?",
+       "option1":"Building mobile apps",
+       "option2":"Server-side processing",
+       "option3":"Building user interfaces",
+       "option4":"Data analysis",
+       "answer":"Building user interfaces",
+       "explanation":"React is a JavaScript library used for building user interfaces, particularly for single-page applications."
+    },
+    {
+        "question":"Which feature of React allows it to efficiently update the UI?",
+        "option1":"Real DOM",
+        "option2":"Virtual DOM",
+        "option3":"Shadow DOM",
+        "option4":"Document Fragment",
+        "answer":"Virtual DOM",
+        "explanation":"The Virtual DOM is a key feature of React that allows efficient updates and rendering of the UI by minimizing real DOM manipulations."
+     },
+     {
+        "question":"JSX stands for...",
+        "option1":"JavaScript XML",
+        "option2":"Java Syntax Extension",
+        "option3":"JavaScript Syntax",
+        "option4":"Java Structured XML",
+        "answer":"JavaScript XML",
+        "explanation":"JSX is an abbreviation for JavaScript XML. It allows us to write HTML elements in JavaScript and place them in the DOM without any createElement() and/or appendChild() methods."
+     },
+     {
+        "question":"In JSX, how do you express JavaScript variables?",
+        "option1":"Inside curly braces",
+        "option2":"Inside square brackets",
+        "option3":"Inside single quotes",
+        "option4":"Inside parentheses",
+        "answer":"Inside curly braces",
+        "explanation":"In JSX, JavaScript expressions, including variables, are embedded inside curly braces."
+     },
+     {
+        "question":" Which of the following is a correct way to comment in JSX?",
+        "option1":"{/*comment here/*}",
+        "option2":" // comment here",
+        "option3":" <!--comment here-->",
+        "option4":" # comment here",
+        "answer":"{/*comment here/*}",
+        "explanation":"In JSX, comments are written with the syntax {/* Comment here */}, similar to JavaScript multi-line comments."
+     },
+     {
+        "question":" What is the correct syntax for embedding a JavaScript expression in JSX? ",
+        "option1":"{expression}",
+        "option2":"expression",
+        "option3":"${expression}",
+        "option4":"#expression",
+        "answer":"{expression}",
+        "explanation":"In JSX, a JavaScript expression is embedded within curly braces, as in <div>{expression}</div>."
+     },
+     {
+        "question":"JSX is processed into...",
+        "option1":"JavaScript Objects",
+        "option2":"HTML strings",
+        "option3":"Virtual DOM Nodes",
+        "option4":"Regular DOM Nodes",
+        "answer":"JavaScript Objects",
+        "explanation":"JSX elements are transpiled into JavaScript objects by tools like Babel before they are rendered into the DOM."
+     },
+     {
+        "question":"JSX elements must be wrapped in an enclosing tag.What is this concept known as?",
+        "option1":"Single Child Rule",
+        "option2":"Parent-Child Relationship",
+        "option3":"React Fragment",
+        "option4":"Encapsulation",
+        "answer":"Encapsulation",
+        "explanation":"JSX elements must be wrapped in an enclosing tag, a concept similar to encapsulation in other programming languages."
+     },
+     {
+        "question":" What will be displayed on the screen for the following JSX code: <div>{2*5}</div>",
+        "option1":"2 * 5",
+        "option2":"10",
+        "option3":"2 5",
+        "option4":"25",
+        "answer":"10",
+        "explanation":"The expression {2 * 5} in JSX will be evaluated as a JavaScript expression, and the result, which is 10, will be displayed."
+     },
+     {
+        "question":"What does the following JSX code render? {'Hello' + 'World'}",
+        "option1":"HelloWorld",
+        "option2":"Hello World",
+        "option3":"'Hello' 'World'",
+        "option4":"Hello+World",
+        "answer":"HelloWorld",
+        "explanation":"The JavaScript expression {'Hello' + 'World'} concatenates the two strings, resulting in 'HelloWorld' being rendered."
+     }
+]
